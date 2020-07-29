@@ -1,0 +1,225 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/*Home section*/
+.home {
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(
+    circle,
+    rgba(255, 201, 0, 1) 0%,
+    rgba(246, 165, 0, 1) 100%
+  );
+}
+.home img {
+  width: 30%;
+  filter: drop-shadow(-5px 5px 5px rgba(0, 0, 0, 0.5));
+}
+
+.intro-img {
+  text-align: center;
+  width: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*Home Section end*/
+/*About section*/
+.about {
+  padding: 10vmin 0;
+  background-color: whitesmoke;
+}
+.about .row {
+  transform-style: preserve-3d;
+}
+.for-about-img {
+  transform-style: preserve-3d;
+}
+.about-img {
+  width: 70%;
+  position: relative;
+  left: 15%;
+  /*transform: translate(-0%, -0%, 20px);*/
+  transform: translateZ(50px);
+  filter: drop-shadow(-5px 5px 5px rgba(0, 0, 0, 0.5));
+}
+.about-bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-panel {
+  background-color: white;
+  padding: 10vmin 10vmin;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.211);
+  margin-top: 0;
+  font-family: "Maven Pro", sans-serif;
+}
+.about-panel h2 {
+  font-weight: 900;
+}
+.insta-photo {
+  padding: 15vmin 0;
+}
+.insta-photo h1 {
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 900;
+  margin: 5vmin 0;
+  color: #d90d4f;
+  letter-spacing: 0;
+  transition: 0.3s;
+}
+.insta-photo h1:hover {
+  letter-spacing: 3px;
+}
+.for-hover::after {
+  position: absolute;
+  content: "";
+  width: 60vmin;
+  margin-top: 10vmin;
+  height: 2px;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  background-color: #d90d4f;
+  transition: 0.3s;
+}
+.for-hover:hover::after {
+  transform: translateX(-50%) scale(1);
+}
+.insta-photo .row img {
+  width: 100%;
+  margin: 0vmin 0px;
+}
+.insta-box {
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  margin: 10vmin 0;
+  transition: 0.3s;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.insta-photo a {
+  color: #d90d4f;
+  font-family: "Amatic SC", cursive;
+  letter-spacing: 0;
+  text-decoration: none;
+  font-size: 5vmin;
+  padding: 0.5vmin 10vmin;
+  background: rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.insta-photo a::before {
+  position: absolute;
+  content: "";
+  width: 35vmin;
+  height: 1px;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  background-color: #d90d4f;
+  transition: 0.3s;
+}
+.insta-photo a:hover::before {
+  transform: translateX(-50%) scale(1);
+}
+.insta-photo a::after {
+  position: absolute;
+  content: "";
+  width: 35vmin;
+  margin-top: 7.2vmin;
+  height: 1px;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  background-color: #d90d4f;
+  transition: 0.3s;
+}
+.insta-photo a:hover::after {
+  transform: translateX(-50%) scale(1);
+}
+.insta-photo a:hover {
+  letter-spacing: 5px;
+  background: none;
+}
+
+/*Skill*/
+.skill {
+  padding: 15vmin 0;
+}
+.skill h1,
+.photos h1 {
+  font-family: "Maven Pro", sans-serif;
+  font-weight: bold;
+  color: #d90d4f;
+  padding-bottom: 10vmin;
+  transition: 0.3s;
+  letter-spacing: 0;
+}
+.skill h1:hover,
+.photos h1:hover {
+  letter-spacing: 3px;
+}
+.skill .container p {
+  font-family: "Nunito", sans-serif;
+}
+.skill .information .row {
+  width: 100%;
+}
+.skill .information .row .column div {
+  text-align: center;
+  width: 100%;
+  background-color: none;
+  margin: 5vmin 0;
+  padding: 30px 5px;
+  transition: 0.3s;
+  position: relative;
+  transform: scale(1);
+  border-radius: 5px;
+  color: #d90d4f;
+}
+.skill .information .row .column div:hover {
+  background-color: #d90d4f;
+  color: white;
+  box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.2),
+    5px -5px 15px rgba(255, 0, 0, 0.2);
+}
+.skill .information .row .column i {
+  font-size: 5vmin;
+}
+.certificate {
+  padding: 15vmin 0 0 0;
+}
+.certificate img {
+  width: 100%;
+  margin: 3vmin 0;
+  border: 2px solid black;
+}
+
+/*Photos*/
+.photos {
+  background-color: whitesmoke;
+  padding: 15vmin 0;
+}
+.photos h1 {
+  font-family: "Maven Pro", sans-serif;
+  font-weight: bold;
+  padding-bottom: 5vmin;
+}
+.photos .container .row .column {
+  flex: 50%;
+  padding: 0pc 4px;
+}
+.photos .container .row .column img {
+  position: relative;
+  margin: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 5px;
+}

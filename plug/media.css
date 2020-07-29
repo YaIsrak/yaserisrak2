@@ -1,0 +1,49 @@
+/*
+position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+*/
+
+@media screen and (max-width: 768px) {
+  /*Add Background Color on navbar*/
+  .navbar {
+    background-color: white;
+  }
+
+  /*navlink's hover bar*/
+  .nav-link::after {
+    width: 16%;
+  }
+  .navbar .active::after {
+    width: 16%;
+  }
+
+  /*Logo-img's Left Padding;
+  (15vmin - 5vmin)*/
+  .logo-img {
+    margin-left: 5vmin;
+  }
+
+  /*Home img Width size
+  (40% - 5vmin)*/
+  .home img {
+    width: 60%;
+  }
+
+  /*About-panel margin-top
+  (0vmin - 40vmin)*/
+  .about-panel {
+    margin-top: 40vmin;
+  }
+
+  /*About padding bottom
+  (15vmin 0)*/
+  .about {
+    padding-bottom: 0;
+  }
+  .insta-box {
+    height: 400px;
+    width: 400px;
+  }
+}
