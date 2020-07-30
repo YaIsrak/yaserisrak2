@@ -5,7 +5,7 @@ position: relative;
   transform: translate(-50%, -50%);
 */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   /*Add Background Color on navbar*/
   .navbar {
     background-color: white;
@@ -34,7 +34,7 @@ position: relative;
   /*About-panel margin-top
   (0vmin - 40vmin)*/
   .about-panel {
-    margin-top: 40vmin;
+    margin-top: 0vmin;
   }
 
   /*About padding bottom
