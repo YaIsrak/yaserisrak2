@@ -39,3 +39,19 @@ VanillaTilt.init(document.querySelectorAll(".for-about-img"), {
   e = d.getElementsByTagName(s)[0];
   e.parentNode.insertBefore(i, e);
 })();
+
+function trad() {
+  document.getElementById("trad").style.display = "inline-block";
+  document.getElementById("digital").style.display = "none";
+  document.getElementById("port").style.display = "none";
+}
+function digital() {
+  document.getElementById("trad").style.display = "none";
+  document.getElementById("digital").style.display = "inline-block";
+  document.getElementById("port").style.display = "none";
+}
+function port() {
+  document.getElementById("trad").style.display = "none";
+  document.getElementById("digital").style.display = "none";
+  document.getElementById("port").style.display = "inline-block";
+}
